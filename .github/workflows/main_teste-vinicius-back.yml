@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy Node.js app to Azure Web App - TESTE-VINICIUS-BACK
+name: Build and deploy Node.js app to Azure Web App - Back-Proliseum
 
 on:
   push:
@@ -56,7 +56,7 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'TESTE-VINICIUS-BACK'
+          app-name: 'Back-Proliseum'
           slot-name: 'Production'
           package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_AFD3CE7E24FC44CF9DBFF8865150BE8D }}
